@@ -363,7 +363,11 @@
 </template>
 
 <script setup lang="ts">
-import { tesloApi } from '@/api/tesloApi';
+import { getProductsAction } from '@/modules/products/actions';
+import { useQuery } from '@tanstack/vue-query';
 
-tesloApi;
+const { data: products, isLoading } = useQuery({
+    queryKey: ['products', { page: 1 }],
+    queryFn: () => getProductsAction(),
+});
 </script>

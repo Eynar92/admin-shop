@@ -4,6 +4,6 @@ const tesloApi = axios.create({
     baseURL: import.meta.env.VITE_TESLO_API_URL,
 });
 
-// Interceptors
+// TODO: Interceptors
 
 export { tesloApi }
