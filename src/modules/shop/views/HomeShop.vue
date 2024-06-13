@@ -362,4 +362,8 @@
     </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { tesloApi } from '@/api/tesloApi';
+
+tesloApi;
+</script>
