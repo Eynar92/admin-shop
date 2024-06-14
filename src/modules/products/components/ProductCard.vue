@@ -2,7 +2,7 @@
     <article class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300 ">
         <a href="#" class="flex flex-col h-full">
             <div class="rounded-xl">
-                <img :src="product.images[0]" :alt="product.title" />
+                <img :src="product.images[0]" :alt="product.title" class="h-[250px] object-cover" />
             </div>
 
             <div class="flex flex-col justify-between mt-1 p-2 h-full">
